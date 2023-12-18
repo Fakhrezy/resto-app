@@ -18,7 +18,7 @@ class DaftarMakananMinumanController extends Controller
     public function index()
     {
         $daftars = DaftarMakananMinuman::all();
-        return view('admin.master.daftar_makanan_minuman.index',['page_title' => 'Daftar Makanan Minuman','daftars' => $daftars]);
+        return view('admin.master.daftar_makanan_minuman.index',['page_title' => 'Daftar Menu','daftars' => $daftars]);
     }
 
     /**
@@ -28,7 +28,7 @@ class DaftarMakananMinumanController extends Controller
      */
     public function create()
     {
-        return view('admin.master.daftar_makanan_minuman.create',['page_title' => 'Tambah Daftar Makanan Minuman']);
+        return view('admin.master.daftar_makanan_minuman.create',['page_title' => 'Tambah Daftar Menu']);
     }
 
     /**

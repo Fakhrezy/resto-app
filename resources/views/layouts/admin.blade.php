@@ -131,7 +131,7 @@
                                     <a href="{{ route('admin.master.daftar_makanan_minuman.index') }}"
                                         class="nav-link {{ request()->is('admin/master/daftar_makanan_minuman*') ? 'active' : '' }}">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p>Daftar Makanan Minuman</p>
+                                        <p>Daftar Menu</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
@@ -197,7 +197,7 @@
             <div class="float-right d-none d-sm-block">
                 <b>Version</b> 3.2.0
             </div>
-            <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights
+            <strong>Copyright &copy; 2024 <a href="https://github.com/Fakhrezy/resto-app">Kelompok 15-Pemweb-Food Court</a>.</strong> All rights
             reserved.
         </footer>
     </div>
