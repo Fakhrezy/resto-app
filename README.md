@@ -1,4 +1,5 @@
 cara pakenya:
+1. rename .env.example jadi .env
 1. sesuaikan database di file .env
 2. jalankan perintah pada terminal:
     ->'composer install'
