@@ -1,11 +1,11 @@
 cara pakenya:
 1. sesuaikan database di file .env
 2. jalankan perintah pada terminal:
-	'composer install'
- 	'npm install'
-	'php artisan key:generate'
-	'php artisan migrate'
-	'php artisan db:seed'
+    ->'composer install'
+ 	->'npm install'
+	->'php artisan key:generate'
+	->'php artisan migrate'
+	->'php artisan db:seed'
 link : https://www.youtube.com/watch?v=PYFV_IFHg2U
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
