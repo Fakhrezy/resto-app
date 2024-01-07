@@ -77,6 +77,7 @@
             }(w, d, 0, "script");
         })(window, document);
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     @yield('css')
 </head>
 
@@ -134,13 +135,13 @@
                                         <p>Daftar Menu</p>
                                     </a>
                                 </li>
-                                <li class="nav-item">
+                                {{-- <li class="nav-item">
                                     <a href="{{ route('admin.master.pelanggan.index') }}"
                                         class="nav-link {{ request()->is('admin/master/resto*') ? 'active' : '' }}">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Data Pelanggan</p>
                                     </a>
-                                </li>
+                                </li> --}}
                             </ul>
                         </li>
                         <li class="nav-header">Transaksi</li>

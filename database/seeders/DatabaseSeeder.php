@@ -9,6 +9,7 @@ use Str;
 use Spatie\Permission\Models\Role;
 use Spatie\Permission\Models\Permission;
 
+
 class DatabaseSeeder extends Seeder
 {
     /**
@@ -20,13 +21,16 @@ class DatabaseSeeder extends Seeder
     {
 
         $crud_daftar_makanan = Permission::create(['name' => 'crud_daftar_makanan']);
-        $edit_resto = Permission::create(['name' => 'edit_resto']);
+        // $edit_resto = Permission::create(['name' => 'edit_resto']);
         $transaksi = Permission::create(['name' => 'transaksi']);
 
+        // permission
         $role_superadmin = Role::create(['name' => 'Superadmin']);
-        $role_superadmin->syncPermissions(['crud_daftar_makanan','edit_resto','transaksi']);
+        $role_superadmin->syncPermissions(['crud_daftar_makanan','transaksi']);
+
         $role_admin = Role::create(['name' => 'Admin']);
         $role_admin->syncPermissions(['transaksi']);
+        
         $akun_superadmin = new User();
         $akun_superadmin->fill([
             'name' => 'superadmin',
