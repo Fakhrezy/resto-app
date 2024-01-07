@@ -120,6 +120,7 @@
                             </a>
                         </li>
                         <li class="nav-item {{ request()->is('admin/master/*') ? 'menu-open' : '' }}">
+                            @if(Auth::user()->name == 'superadmin')
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-file"></i>
                                 <p>
@@ -143,7 +144,9 @@
                                     </a>
                                 </li> --}}
                             </ul>
+                            @endif
                         </li>
+
                         <li class="nav-header">Transaksi</li>
                         <li class="nav-item">
                             <a href="{{ route('admin.transaksi.create') }}"

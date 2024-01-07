@@ -30,7 +30,7 @@ class DatabaseSeeder extends Seeder
 
         $role_admin = Role::create(['name' => 'Admin']);
         $role_admin->syncPermissions(['transaksi']);
-        
+
         $akun_superadmin = new User();
         $akun_superadmin->fill([
             'name' => 'superadmin',
