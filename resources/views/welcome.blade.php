@@ -18,8 +18,7 @@
         /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
         html {
             line-height: 1.15;
-            -webkit-text-size-adjust: 100%
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+            -webkit-text-size-adjust: 100% font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
             line-height: 1.5
         }
 
@@ -28,8 +27,7 @@
         }
 
         a {
-            background-color: transparent
-            color: inherit;
+            background-color: transparent color: inherit;
             text-decoration: inherit
         }
 
@@ -426,6 +424,49 @@
 </head>
 
 <body class="antialiased">
+    <div id="carouselExampleCaptions" class="carousel slide ">
+        <div class="carousel-indicators">
+            <button type="button" data-target="#carouselExampleCaptions" data-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-target="#carouselExampleCaptions" data-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-target="#carouselExampleCaptions" data-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{{ asset('images/image3.jpg') }}" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Sampurasun</h5>
+                    <p>jika tidak ada bahu tuk bersandar <br>masih ada makanan kami untuk penunjang lapar</br></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="{{ asset('images/image1.jpg') }}" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Khas Nusantara</h5>
+                    <p>Jangan pernah ngurusin orang, belum tentu dia mau kurus</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="{{ asset('images/image2.jpg') }}" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Spesial Kolesterol</h5>
+                    <p>Jangan takut gendut, karna semua kecil di mata tuhan</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden"></span>
+        </button>
+    </div>
+
+
     <div
         class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
         @if (Route::has('login'))
@@ -445,74 +486,72 @@
             </div>
         @endif
 
-        {{-- <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm fixed-top">
-            <p style="font-size: 3em;">Selamat Datang di Aplikasi Kasir Foodcourt</p>
+        {{-- <div class="container mt-2 text-gray-600 dark:text-gray-400 text-sm">
+            <p style="font-size: 3em;">Selamat Datang <br>di Aplikasi Kasir Foodcourt</p>
+            <p style="font-size: 2em;">Makan untuk hidup, bukan hidup untuk makan</p>
         </div> --}}
 
-        <div id="carouselExampleCaptions" class="carousel slide ">
-            <div class="carousel-indicators">
-                <button type="button" data-target="#carouselExampleCaptions" data-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-target="#carouselExampleCaptions" data-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-target="#carouselExampleCaptions" data-slide-to="2"
-                    aria-label="Slide 3"></button>
+
+        <div class="container mt-4">
+
+            <div class="row row-cols-1 row-cols-md-3 g-4 mx-auto">
+                <div class="col">
+                    <div class="card h-100 bg-warning text-black">
+                        <img src="https://blog.tiket.com/wp-content/uploads/Karedok.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Lezat</h5>
+                            <p class="card-text">makanan khas lidah nusantara, enak tiada tara, kerasa sampai jiwa, paling raos sealam semesta</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 bg-warning text-black">
+                        <img src="https://blog.tiket.com/wp-content/uploads/Nasi-Timbel-1.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Hemat</h5>
+                            <p class="card-text">kualitas pejabat, harga tetap merakyat. harga kaki lima rasa bintang lima</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 bg-warning text-black">
+                        <img src="https://blog.tiket.com/wp-content/uploads/Lotek-1.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Sehat</h5>
+                            <p class="card-text">diolah dari bahan lokal berkualitas, penuh integritas memenuhi gizi dan nutrisi yang berkelas</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="{{ asset('images/image1.jpg') }}" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Diskon Patah Hati</h5>
-                        <p>jika tidak ada bahu tuk bersandar <br>masih ada makanan kami untuk penunjang lapar</br></p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="{{ asset('images/image2.jpg') }}" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Spesial Kolesterol</h5>
-                        <p>Jangan pernah ngurusin orang, belum tentu dia mau kurus</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="{{ asset('images/image3.jpg') }}" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Makan aja</h5>
-                        <p>Jangan takut gendut, karna semua kecil di mata tuhan</p>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions"
-                data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions"
-                data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden"></span>
-            </button>
         </div>
 
+    </div>
 
-        <div class=" text-gray-600 dark:text-gray-400 text-sm fixed-bottom clearfix">
-            <p style="font-size: 3em;">ini landing page Resto-app</p>
+
+    <footer class="main-footer bg-slate-600">
+        <div class="float-right d-none d-sm-block">
+            <b>Informatika Itenas</b> 2022
         </div>
-
-        <footer class="fixed-bottom">
-            <h1>footer</h1>
-        </footer>
-
+        <strong>Copyright &copy; 2024 <a href="https://github.com/Fakhrezy/resto-app">Kelompok 15-Pemweb-Food
+                Court</a>.</strong>
+    </footer>
 
 
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-        </script>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
 
 </body>
 
